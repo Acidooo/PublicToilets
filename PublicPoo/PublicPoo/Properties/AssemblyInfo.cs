@@ -13,9 +13,9 @@ using System.Runtime.CompilerServices;
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 
-// The assembly version has the format "{Major}.{Minor}.{Build}.{Revision}".
-// The form "{Major}.{Minor}.*" will automatically update the build and revision,
-// and "{Major}.{Minor}.{Build}.*" will update just the revision.
+// The assembly version has the format \"{Major}.{Minor}.{Build}.{Revision}\".
+// The form \"{Major}.{Minor}.*\" will automatically update the build and revision,
+// and \"{Major}.{Minor}.{Build}.*\" will update just the revision.
 
 [assembly: AssemblyVersion("1.0.*")]
 
@@ -23,4 +23,4 @@ using System.Runtime.CompilerServices;
 // if desired. See the Mono documentation for more information about signing.
 
 //[assembly: AssemblyDelaySign(false)]
-//[assembly: AssemblyKeyFile("")]
+//[assembly: AssemblyKeyFile(\"\")]

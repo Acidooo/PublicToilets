@@ -1,16 +1,18 @@
 ﻿using System;
 
 using Android.App;
-using Android.Content;
 using Android.Content.PM;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Android.OS;
+using MvvmCross.Core.ViewModels;
+using MvvmCross.Core.Views;
+using MvvmCross.Droid.Platform;
+using MvvmCross.Forms.Presenter.Droid;
+using MvvmCross.Platform;
+using Xamarin.Forms;
 
 namespace PublicPoo.Droid
 {
-    [Activity(Label = "PublicPoo.Droid", Icon = "@drawable/icon", Theme = "@style/MyTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "PublicToilets", Icon = "@drawable/icon", Theme = "@style/MainTheme", ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -18,11 +20,32 @@ namespace PublicPoo.Droid
             TabLayoutResource = Resource.Layout.Tabbar;
             ToolbarResource = Resource.Layout.Toolbar;
 
+            try
+            {
+                //MK Possilbe fix for an issue where Mvx.Resolve<> throws object null reference
+                //   https://github.com/MvvmCross/MvvmCross/issues/1192
+                //   https://github.com/MvvmCross/MvvmCross/issues/1245
+                var setup = MvxAndroidSetupSingleton.EnsureSingletonAvailable(ApplicationContext);
+                setup.EnsureInitialized();
+            }
+            catch (Exception e)
+            {
+                System.Diagnostics.Debug.WriteLine(e);
+            }
+
             base.OnCreate(bundle);
+            
+            Forms.Init(this, bundle);
 
-            global::Xamarin.Forms.Forms.Init(this, bundle);
+            // Set up mvvmcross
+            var mvxFormsApp = new App();
+            LoadApplication(mvxFormsApp);
 
-            LoadApplication(new App());
+            var presenter = Mvx.Resolve<IMvxViewPresenter>() as MvxFormsDroidPagePresenter;
+            if (presenter != null) presenter.MvxFormsApp = mvxFormsApp;
+
+            Mvx.Resolve<IMvxAppStart>().Start();
         }
     }
 }
+

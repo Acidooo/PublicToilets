@@ -1,0 +1,21 @@
+﻿{
+  "supports": {},
+  "dependencies": {
+    "BuildIt.General": "1.0.0.41",
+    "BuildIt.States": "1.0.0.41",
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "MvvmCross": "4.4.0",
+    "MvvmCross.Binding": "4.4.0",
+    "MvvmCross.Core": "4.4.0",
+    "MvvmCross.Forms.Presenter": "4.0.1",
+    "MvvmCross.Platform": "4.4.0",
+    "NETStandard.Library": "1.6.1",
+    "Newtonsoft.Json": "10.0.2",
+    "Xamarin.Forms": "2.3.4.247"
+  },
+  "frameworks": {
+    "netstandard1.3": {
+      "imports": "portable-net45+win8+wpa81"
+    }
+  }
+}
