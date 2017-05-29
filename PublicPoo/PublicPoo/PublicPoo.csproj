@@ -38,12 +38,17 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Common\NavParams\ToiletDetailNavParams.cs" />
     <Compile Include="Common\Toilet.cs" />
     <Compile Include="MvvmcrossApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FeedService.cs" />
     <Compile Include="Services\interfaces\IFeedService.cs" />
+    <Compile Include="ViewModels\ToiletDetailViewModel.cs" />
     <Compile Include="ViewModels\ToiletsViewModel.cs" />
+    <Compile Include="Views\ToiletDetailPage.xaml.cs">
+      <DependentUpon>ToiletDetailPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\ToiletsPage.xaml.cs">
       <DependentUpon>ToiletsPage.xaml</DependentUpon>
     </Compile>
@@ -53,6 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Views\ToiletsPage.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Views\ToiletDetailPage.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
       <SubType>Designer</SubType>
     </EmbeddedResource>

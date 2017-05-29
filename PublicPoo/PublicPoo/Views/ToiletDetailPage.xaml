@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PublicPoo.Views.ToiletDetailPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid>
+                <StackLayout Orientation="Vertical" Spacing="10" Margin="10,0">
+                    <Label Text="{Binding SelectedToilet.Name}"></Label>
+                    <Label Text="{Binding Address}"></Label>
+                    <Label Text="{Binding SelectedToilet.Latitude}"></Label>
+                    <Label Text="{Binding SelectedToilet.Longitude}"></Label>
+                </StackLayout>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

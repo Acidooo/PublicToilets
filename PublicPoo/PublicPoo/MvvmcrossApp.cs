@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
+using PublicPoo.ViewModels;
 using PublicToilet.Services;
 using PublicToilet.Services.interfaces;
-using PublicToilet.ViewModels;
 
 namespace PublicPoo
 {

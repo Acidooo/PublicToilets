@@ -1,20 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Diagnostics;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
+using Newtonsoft.Json;
+using PublicPoo.Common.NavParams;
 using PublicToilet.Common;
 using PublicToilet.Services.interfaces;
 
-namespace PublicToilet.ViewModels
+namespace PublicPoo.ViewModels
 {
     public class ToiletsViewModel : MvxViewModel
     {
         private ObservableCollection<Toilet> toilets;
-
         public ObservableCollection<Toilet> Toilets
         {
             get { return toilets; }
@@ -42,6 +39,13 @@ namespace PublicToilet.ViewModels
         {
             base.Start();
             await RetrieveToilets();
+        }
+
+        public void NavigateToToiletDetailPage(Toilet selectedToilet)
+        {
+            if (selectedToilet == null) return;
+
+            ShowViewModel<ToiletDetailViewModel>(new ToiletDetailNavParams() { SerialisedToilet = JsonConvert.SerializeObject(selectedToilet) });
         }
     }
 }
