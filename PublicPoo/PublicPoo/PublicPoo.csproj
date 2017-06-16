@@ -43,6 +43,7 @@
     <Compile Include="MvvmcrossApp.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\FeedService.cs" />
+    <Compile Include="Services\interfaces\IDownloadService.cs" />
     <Compile Include="Services\interfaces\IFeedService.cs" />
     <Compile Include="ViewModels\ToiletDetailViewModel.cs" />
     <Compile Include="ViewModels\ToiletsViewModel.cs" />

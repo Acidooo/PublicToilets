@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform;
 using MvvmCross.Platform.IoC;
+using Plugin.DownloadManager;
+using Plugin.DownloadManager.Abstractions;
 using PublicPoo.ViewModels;
 using PublicToilet.Services;
 using PublicToilet.Services.interfaces;
@@ -21,6 +23,7 @@ namespace PublicPoo
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
+            Mvx.LazyConstructAndRegisterSingleton<IDownloadManager>(() => CrossDownloadManager.Current);
             RegisterAppStart<ToiletsViewModel>();
         }
     }

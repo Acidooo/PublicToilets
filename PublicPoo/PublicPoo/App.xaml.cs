@@ -1,5 +1,4 @@
-﻿using MvvmCross.Forms.Presenter.Core;
-using Xamarin.Forms;
+﻿using Xamarin.Forms;
 
 namespace PublicPoo
 {

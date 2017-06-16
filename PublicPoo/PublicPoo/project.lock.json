@@ -133,17 +133,17 @@
           "ref/netstandard1.3/Microsoft.Win32.Primitives.dll": {}
         }
       },
-      "MvvmCross/4.4.0": {
+      "MvvmCross/5.0.2": {
         "type": "package",
         "dependencies": {
-          "MvvmCross.Binding": "4.4.0",
-          "MvvmCross.Core": "4.4.0"
+          "MvvmCross.Binding": "[5.0.2]",
+          "MvvmCross.Core": "[5.0.2]"
         }
       },
-      "MvvmCross.Binding/4.4.0": {
+      "MvvmCross.Binding/5.0.2": {
         "type": "package",
         "dependencies": {
-          "MvvmCross.Core": "4.4.0"
+          "MvvmCross.Core": "[5.0.2]"
         },
         "compile": {
           "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.dll": {},
@@ -154,10 +154,10 @@
           "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll": {}
         }
       },
-      "MvvmCross.Core/4.4.0": {
+      "MvvmCross.Core/5.0.2": {
         "type": "package",
         "dependencies": {
-          "MvvmCross.Platform": "4.4.0"
+          "MvvmCross.Platform": "[5.0.2]"
         },
         "compile": {
           "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.dll": {}
@@ -166,20 +166,20 @@
           "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.dll": {}
         }
       },
-      "MvvmCross.Forms.Presenter/4.0.1": {
+      "MvvmCross.Forms/5.0.2": {
         "type": "package",
         "dependencies": {
-          "MvvmCross.Core": "4.0.0",
-          "Xamarin.Forms": "2.0.0.6490"
+          "MvvmCross.Core": "[5.0.2]",
+          "Xamarin.Forms": "2.3.4.231"
         },
         "compile": {
-          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.Presenter.Core.dll": {}
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.dll": {}
         },
         "runtime": {
-          "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.Presenter.Core.dll": {}
+          "lib/portable-net45+netcore45+wpa81+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.dll": {}
         }
       },
-      "MvvmCross.Platform/4.4.0": {
+      "MvvmCross.Platform/5.0.2": {
         "type": "package",
         "compile": {
           "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.dll": {}
@@ -1284,17 +1284,28 @@
           "lib/netstandard1.3/System.Xml.XmlDocument.dll": {}
         }
       },
-      "Xamarin.Forms/2.3.4.247": {
+      "Xam.Plugins.DownloadManager/1.1.1": {
         "type": "package",
         "compile": {
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll": {},
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll": {},
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll": {}
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.dll": {}
         },
         "runtime": {
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll": {},
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Platform.dll": {},
-          "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Xaml.dll": {}
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.Abstractions.dll": {},
+          "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.dll": {}
+        }
+      },
+      "Xamarin.Forms/2.3.5.239-pre3": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard1.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard1.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard1.0/Xamarin.Forms.Xaml.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard1.0/Xamarin.Forms.Core.dll": {},
+          "lib/netstandard1.0/Xamarin.Forms.Platform.dll": {},
+          "lib/netstandard1.0/Xamarin.Forms.Xaml.dll": {}
         }
       }
     }
@@ -1579,190 +1590,213 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "MvvmCross/4.4.0": {
-      "sha512": "BA/aQRUiZy7xmaGYCLOUJEpseYtF9Zv/Ck1kWKOQMtS/Xw1zj9M+vJOawWlk2xl7QBz9Xkya7dFJOs+RmiruVw==",
+    "MvvmCross/5.0.2": {
+      "sha512": "42gxm17RoThKry9mc7/u93zoxHwwZ6ZqGJ3bYAMNyioc3VgasR1a9OYHeyHI3k4evToToPi32hOzaQdgAxcLSg==",
       "type": "package",
-      "path": "MvvmCross/4.4.0",
+      "path": "MvvmCross/5.0.2",
       "files": [
-        "MvvmCross.4.4.0.nupkg.sha512",
+        "MvvmCross.5.0.2.nupkg.sha512",
         "MvvmCross.nuspec"
       ]
     },
-    "MvvmCross.Binding/4.4.0": {
-      "sha512": "1hT8Xe+whI2CgSYaV6+wZaOyQXc724ZNhRKF9SNjSzG4OpBEt/KoXRZVWpbqnVMO3Uz3sk2QbSNmJD/KPNixfg==",
+    "MvvmCross.Binding/5.0.2": {
+      "sha512": "rm4yk5u3llN/BtTfGgvNIh4mqwp+u6NUBABLU6C05Bxu5j8cPb8GIosBC6cfDfmEr1gufyNCo1esw1N13lVPFA==",
       "type": "package",
-      "path": "MvvmCross.Binding/4.4.0",
+      "path": "MvvmCross.Binding/5.0.2",
       "files": [
-        "MvvmCross.Binding.4.4.0.nupkg.sha512",
+        "MvvmCross.Binding.5.0.2.nupkg.sha512",
         "MvvmCross.Binding.nuspec",
         "lib/MonoAndroid/MvvmCross.Binding.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Binding.Droid.pdb.srcsrv",
         "lib/MonoAndroid/MvvmCross.Binding.dll",
-        "lib/MonoAndroid/MvvmCross.Binding.dll.mdb",
+        "lib/MonoAndroid/MvvmCross.Binding.pdb",
+        "lib/MonoAndroid/MvvmCross.Binding.pdb.srcsrv",
         "lib/MonoAndroid/MvvmCross.Localization.dll",
-        "lib/MonoAndroid/MvvmCross.Localization.dll.mdb",
+        "lib/MonoAndroid/MvvmCross.Localization.pdb",
+        "lib/MonoAndroid/MvvmCross.Localization.pdb.srcsrv",
         "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.dll",
-        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.dll.mdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.Mac.pdb.srcsrv",
         "lib/Xamarin.Mac20/MvvmCross.Binding.dll",
-        "lib/Xamarin.Mac20/MvvmCross.Binding.dll.mdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Binding.pdb.srcsrv",
         "lib/Xamarin.Mac20/MvvmCross.Localization.dll",
-        "lib/Xamarin.Mac20/MvvmCross.Localization.dll.mdb",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Localization.pdb.srcsrv",
         "lib/Xamarin.iOS10/MvvmCross.Binding.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Binding.dll.mdb",
         "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.dll.mdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.iOS.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Binding.pdb.srcsrv",
         "lib/Xamarin.iOS10/MvvmCross.Localization.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Localization.dll.mdb",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Localization.pdb.srcsrv",
         "lib/Xamarin.tvOS/MvvmCross.Binding.dll",
-        "lib/Xamarin.tvOS/MvvmCross.Binding.dll.mdb",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.pdb.srcsrv",
         "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Binding.tvOS.pdb.srcsrv",
         "lib/Xamarin.tvOS/MvvmCross.Localization.dll",
-        "lib/Xamarin.tvOS/MvvmCross.Localization.dll.mdb",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Localization.pdb.srcsrv",
         "lib/dotnet/MvvmCross.Binding.dll",
-        "lib/dotnet/MvvmCross.Binding.dll.mdb",
+        "lib/dotnet/MvvmCross.Binding.pdb",
+        "lib/dotnet/MvvmCross.Binding.pdb.srcsrv",
         "lib/dotnet/MvvmCross.Localization.dll",
-        "lib/dotnet/MvvmCross.Localization.dll.mdb",
+        "lib/dotnet/MvvmCross.Localization.pdb",
+        "lib/dotnet/MvvmCross.Localization.pdb.srcsrv",
+        "lib/net45/MvvmCross.Binding.Wpf.dll",
+        "lib/net45/MvvmCross.Binding.Wpf.pdb",
+        "lib/net45/MvvmCross.Binding.Wpf.pdb.srcsrv",
         "lib/net45/MvvmCross.Binding.dll",
-        "lib/net45/MvvmCross.Binding.dll.mdb",
+        "lib/net45/MvvmCross.Binding.pdb",
+        "lib/net45/MvvmCross.Binding.pdb.srcsrv",
         "lib/net45/MvvmCross.Localization.dll",
-        "lib/net45/MvvmCross.Localization.dll.mdb",
-        "lib/netcore45/MvvmCross.Binding.dll",
-        "lib/netcore45/MvvmCross.Binding.dll.mdb",
-        "lib/netcore45/MvvmCross.Localization.dll",
-        "lib/netcore45/MvvmCross.Localization.dll.mdb",
+        "lib/net45/MvvmCross.Localization.pdb",
+        "lib/net45/MvvmCross.Localization.pdb.srcsrv",
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.dll",
-        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.dll.mdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Binding.pdb.srcsrv",
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll",
-        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.dll.mdb",
-        "lib/portable-win81+wpa81/MvvmCross.Binding.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Binding.dll.mdb",
-        "lib/portable-win81+wpa81/MvvmCross.Localization.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Localization.dll.mdb",
-        "lib/win81/MvvmCross.Binding.dll",
-        "lib/win81/MvvmCross.Binding.dll.mdb",
-        "lib/win81/MvvmCross.Localization.dll",
-        "lib/win81/MvvmCross.Localization.dll.mdb",
-        "lib/wpa81/MvvmCross.Binding.dll",
-        "lib/wpa81/MvvmCross.Binding.dll.mdb",
-        "lib/wpa81/MvvmCross.Localization.dll",
-        "lib/wpa81/MvvmCross.Localization.dll.mdb"
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Localization.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Binding.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Binding.dll",
+        "lib/uap10.0/MvvmCross.Binding.pdb",
+        "lib/uap10.0/MvvmCross.Binding.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Localization.dll",
+        "lib/uap10.0/MvvmCross.Localization.pdb",
+        "lib/uap10.0/MvvmCross.Localization.pdb.srcsrv"
       ]
     },
-    "MvvmCross.Core/4.4.0": {
-      "sha512": "oPRhsHkKdqrY9BYn8k6Uyayip7/zIWKMeDM9sG6bDo8BefCeKkHlXQEPLjirTWIQMluHFzUZHhVAB3CEmwJM9A==",
+    "MvvmCross.Core/5.0.2": {
+      "sha512": "4f3fO3oiGB+DNZe9ZOSm2IdqaklFvI3vWcgrMDKBDQeogVh5HxX7dI7Y7DV0IHpl8pHpdI9xJ8IfJNdXhS7Vkw==",
       "type": "package",
-      "path": "MvvmCross.Core/4.4.0",
+      "path": "MvvmCross.Core/5.0.2",
       "files": [
-        "MvvmCross.Core.4.4.0.nupkg.sha512",
+        "MvvmCross.Core.5.0.2.nupkg.sha512",
         "MvvmCross.Core.nuspec",
         "lib/MonoAndroid/MvvmCross.Core.dll",
-        "lib/MonoAndroid/MvvmCross.Droid.Shared.dll",
+        "lib/MonoAndroid/MvvmCross.Core.pdb",
         "lib/MonoAndroid/MvvmCross.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Droid.pdb",
         "lib/Xamarin.Mac20/MvvmCross.Core.dll",
+        "lib/Xamarin.Mac20/MvvmCross.Core.pdb",
         "lib/Xamarin.Mac20/MvvmCross.Mac.dll",
-        "lib/Xamarin.Mac20/MvvmCross.Mac.dll.mdb",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Mac.pdb.srcsrv",
         "lib/Xamarin.iOS10/MvvmCross.Core.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Core.pdb",
         "lib/Xamarin.iOS10/MvvmCross.iOS.dll",
-        "lib/Xamarin.iOS10/MvvmCross.iOS.dll.mdb",
+        "lib/Xamarin.iOS10/MvvmCross.iOS.pdb",
         "lib/Xamarin.tvOS/MvvmCross.Core.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Core.pdb",
         "lib/Xamarin.tvOS/MvvmCross.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.tvOS.pdb.srcsrv",
         "lib/dotnet/MvvmCross.Core.dll",
+        "lib/dotnet/MvvmCross.Core.pdb",
         "lib/net45/MvvmCross.Core.dll",
+        "lib/net45/MvvmCross.Core.pdb",
         "lib/net45/MvvmCross.Wpf.dll",
-        "lib/netcore45/MvvmCross.Core.dll",
-        "lib/netcore45/MvvmCross.WindowsStore.dll",
-        "lib/netcore45/MvvmCross.WindowsStore.pri",
+        "lib/net45/MvvmCross.Wpf.pdb",
+        "lib/net45/MvvmCross.Wpf.pdb.srcsrv",
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Core.dll",
-        "lib/portable-win81+wpa81/MvvmCross.WindowsCommon.dll",
-        "lib/portable-win81+wpa81/MvvmCross.WindowsCommon.pri",
-        "lib/uap/MvvmCross.Core.dll",
-        "lib/uap/MvvmCross.WindowsUWP.dll",
-        "lib/uap/MvvmCross.WindowsUWP.pri",
-        "lib/uap/MvvmCross.WindowsUWP/Properties/MvvmCross.WindowsUWP.rd.xml",
-        "lib/win81/MvvmCross.Core.dll",
-        "lib/win81/MvvmCross.WindowsCommon.dll",
-        "lib/win81/MvvmCross.WindowsCommon.pri",
-        "lib/wpa81/MvvmCross.Core.dll",
-        "lib/wpa81/MvvmCross.WindowsCommon.dll",
-        "lib/wpa81/MvvmCross.WindowsCommon.pri"
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Core.pdb",
+        "lib/uap10.0/MvvmCross.Core.dll",
+        "lib/uap10.0/MvvmCross.Core.pdb",
+        "lib/uap10.0/MvvmCross.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Uwp.pri"
       ]
     },
-    "MvvmCross.Forms.Presenter/4.0.1": {
-      "sha512": "TNd6zS7RmIToWFX2Ul67A0g159PtCcG5D5RIEv747y/u4BFhv9g82OMiPRH48ho5S9jPtmaxKFDTJUB6HbDmig==",
+    "MvvmCross.Forms/5.0.2": {
+      "sha512": "HGVhPiQo0E3rgR0psbVfu5j3nWwyB+XPNK55AohKEkCcy8TTql/6C2+1yUmuW5GNWyKmIdsoXtrtHtHfjc1FQQ==",
       "type": "package",
-      "path": "MvvmCross.Forms.Presenter/4.0.1",
+      "path": "MvvmCross.Forms/5.0.2",
       "files": [
-        "MvvmCross.Forms.Presenter.4.0.1.nupkg.sha512",
-        "MvvmCross.Forms.Presenter.nuspec",
-        "lib/MonoAndroid403/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/MonoAndroid403/MvvmCross.Forms.Presenter.Droid.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Forms.Presenter.iOS.dll",
-        "lib/dotnet/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/portable-net45+netcore45+wpa81+wp8+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Forms.Presenter.Windows81.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Forms.Presenter.Windows81.pri",
-        "lib/portable-win81+wpa81/MvvmCross.Forms.Presenter.WindowsUWP.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Forms.Presenter.WindowsUWP.pri",
-        "lib/uap/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/uap/MvvmCross.Forms.Presenter.WindowsUWP.dll",
-        "lib/uap/MvvmCross.Forms.Presenter.WindowsUWP.pri",
-        "lib/uap/MvvmCross.Forms.Presenter.WindowsUWP/Properties/MvvmCross.Forms.Presenter.WindowsUWP.rd.xml",
-        "lib/win81/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/win81/MvvmCross.Forms.Presenter.Windows81.dll",
-        "lib/win81/MvvmCross.Forms.Presenter.Windows81.pri",
-        "lib/wp8/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/wp8/MvvmCross.Forms.Presenter.WindowsPhone.dll",
-        "lib/wpa81/MvvmCross.Forms.Presenter.Core.dll",
-        "lib/wpa81/MvvmCross.Forms.Presenter.Windows81.dll",
-        "lib/wpa81/MvvmCross.Forms.Presenter.Windows81.pri"
+        "MvvmCross.Forms.5.0.2.nupkg.sha512",
+        "MvvmCross.Forms.nuspec",
+        "lib/MonoAndroid70/MvvmCross.Forms.Droid.dll",
+        "lib/MonoAndroid70/MvvmCross.Forms.Droid.pdb",
+        "lib/MonoAndroid70/MvvmCross.Forms.Droid.pdb.srcsrv",
+        "lib/MonoAndroid70/MvvmCross.Forms.dll",
+        "lib/MonoAndroid70/MvvmCross.Forms.pdb",
+        "lib/MonoAndroid70/MvvmCross.Forms.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Forms.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Forms.iOS.dll",
+        "lib/Xamarin.iOS10/MvvmCross.Forms.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Forms.iOS.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Forms.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Forms.pdb.srcsrv",
+        "lib/dotnet/MvvmCross.Forms.dll",
+        "lib/dotnet/MvvmCross.Forms.pdb",
+        "lib/dotnet/MvvmCross.Forms.pdb.srcsrv",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.dll",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.pdb",
+        "lib/portable-net45+netcore45+wpa81+MonoAndroid10+Xamarin.iOS10/MvvmCross.Forms.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Forms.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Forms.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Forms.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Forms.dll",
+        "lib/uap10.0/MvvmCross.Forms.pdb",
+        "lib/uap10.0/MvvmCross.Forms.pdb.srcsrv"
       ]
     },
-    "MvvmCross.Platform/4.4.0": {
-      "sha512": "6H9qA5Vx9MzKZ9dVv3gw9QEJmN2pXmlwpTcwRouCGTJ0RdKkDZ5AKka3MboXgxn/P+j2S+PfQ4RjkmJnXCyOZA==",
+    "MvvmCross.Platform/5.0.2": {
+      "sha512": "ZXPZxLWkhOXmNGH82Y7mLRT8h+0hkysgPl9NM5kaugyjZNPcY7pz3geMiCDUpUFey3b6M/zQa0nT8a/Wen5i+A==",
       "type": "package",
-      "path": "MvvmCross.Platform/4.4.0",
+      "path": "MvvmCross.Platform/5.0.2",
       "files": [
-        "MvvmCross.Platform.4.4.0.nupkg.sha512",
+        "MvvmCross.Platform.5.0.2.nupkg.sha512",
         "MvvmCross.Platform.nuspec",
         "lib/MonoAndroid/MvvmCross.Platform.Droid.dll",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.pdb",
+        "lib/MonoAndroid/MvvmCross.Platform.Droid.pdb.srcsrv",
         "lib/MonoAndroid/MvvmCross.Platform.dll",
-        "lib/MonoAndroid/MvvmCross.Platform.dll.mdb",
+        "lib/MonoAndroid/MvvmCross.Platform.pdb",
+        "lib/MonoAndroid/MvvmCross.Platform.pdb.srcsrv",
         "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.dll",
-        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.dll.mdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.Mac.pdb.srcsrv",
         "lib/Xamarin.Mac20/MvvmCross.Platform.dll",
-        "lib/Xamarin.Mac20/MvvmCross.Platform.dll.mdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.pdb",
+        "lib/Xamarin.Mac20/MvvmCross.Platform.pdb.srcsrv",
         "lib/Xamarin.iOS10/MvvmCross.Platform.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Platform.dll.mdb",
         "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll",
-        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.dll.mdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.iOS.pdb.srcsrv",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.pdb",
+        "lib/Xamarin.iOS10/MvvmCross.Platform.pdb.srcsrv",
         "lib/Xamarin.tvOS/MvvmCross.Platform.dll",
-        "lib/Xamarin.tvOS/MvvmCross.Platform.dll.mdb",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.pdb.srcsrv",
         "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.dll",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.pdb",
+        "lib/Xamarin.tvOS/MvvmCross.Platform.tvOS.pdb.srcsrv",
         "lib/dotnet/MvvmCross.Platform.dll",
-        "lib/dotnet/MvvmCross.Platform.dll.mdb",
+        "lib/dotnet/MvvmCross.Platform.pdb",
+        "lib/dotnet/MvvmCross.Platform.pdb.srcsrv",
         "lib/net45/MvvmCross.Platform.Wpf.dll",
+        "lib/net45/MvvmCross.Platform.Wpf.pdb",
+        "lib/net45/MvvmCross.Platform.Wpf.pdb.srcsrv",
         "lib/net45/MvvmCross.Platform.dll",
-        "lib/net45/MvvmCross.Platform.dll.mdb",
-        "lib/netcore45/MvvmCross.Platform.WindowsStore.dll",
-        "lib/netcore45/MvvmCross.Platform.WindowsStore.pri",
-        "lib/netcore45/MvvmCross.Platform.dll",
-        "lib/netcore45/MvvmCross.Platform.dll.mdb",
+        "lib/net45/MvvmCross.Platform.pdb",
+        "lib/net45/MvvmCross.Platform.pdb.srcsrv",
         "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.dll",
-        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.dll.mdb",
-        "lib/portable-win81+wpa81/MvvmCross.Platform.WindowsCommon.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Platform.WindowsCommon.pri",
-        "lib/portable-win81+wpa81/MvvmCross.Platform.dll",
-        "lib/portable-win81+wpa81/MvvmCross.Platform.dll.mdb",
-        "lib/win81/MvvmCross.Platform.WindowsCommon.dll",
-        "lib/win81/MvvmCross.Platform.WindowsCommon.pri",
-        "lib/win81/MvvmCross.Platform.dll",
-        "lib/win81/MvvmCross.Platform.dll.mdb",
-        "lib/wpa81/MvvmCross.Platform.WindowsCommon.dll",
-        "lib/wpa81/MvvmCross.Platform.WindowsCommon.pri",
-        "lib/wpa81/MvvmCross.Platform.dll",
-        "lib/wpa81/MvvmCross.Platform.dll.mdb"
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.pdb",
+        "lib/portable-net45+win+wpa81+wp80/MvvmCross.Platform.pdb.srcsrv",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.dll",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.pdb",
+        "lib/uap10.0/MvvmCross.Platform.Uwp.pri",
+        "lib/uap10.0/MvvmCross.Platform.dll",
+        "lib/uap10.0/MvvmCross.Platform.pdb",
+        "lib/uap10.0/MvvmCross.Platform.pdb.srcsrv"
       ]
     },
     "NETStandard.Library/1.6.1": {
@@ -5014,13 +5048,54 @@
         "ref/xamarinwatchos10/_._"
       ]
     },
-    "Xamarin.Forms/2.3.4.247": {
-      "sha512": "+6VN8IBSah7EcNJ4SV3pIhNA8tNlBaPLfr3+hQpPIllueJrXI5QtjM0tAJusPc2V1cYyC4YKvA1fs5c/A8RrBw==",
+    "Xam.Plugins.DownloadManager/1.1.1": {
+      "sha512": "4zkCAzOL8eeZWkaB2rAQqouSdPWzNvppXZSRMk7iu1dizliNZKMbXKtA2/roe7xU2PUWJh/qXJyGNKC/CeNfrw==",
       "type": "package",
-      "path": "Xamarin.Forms/2.3.4.247",
+      "path": "Xam.Plugins.DownloadManager/1.1.1",
       "files": [
-        "Xamarin.Forms.2.3.4.247.nupkg.sha512",
+        "Xam.Plugins.DownloadManager.1.1.1.nupkg.sha512",
+        "Xam.Plugins.DownloadManager.nuspec",
+        "lib/MonoAndroid10/Plugin.DownloadManager.Abstractions.dll",
+        "lib/MonoAndroid10/Plugin.DownloadManager.Abstractions.xml",
+        "lib/MonoAndroid10/Plugin.DownloadManager.dll",
+        "lib/MonoAndroid10/Plugin.DownloadManager.xml",
+        "lib/Xamarin.Mac20/Plugin.DownloadManager.Abstractions.dll",
+        "lib/Xamarin.Mac20/Plugin.DownloadManager.Abstractions.xml",
+        "lib/Xamarin.Mac20/Plugin.DownloadManager.dll",
+        "lib/Xamarin.Mac20/Plugin.DownloadManager.xml",
+        "lib/Xamarin.iOS10/Plugin.DownloadManager.Abstractions.dll",
+        "lib/Xamarin.iOS10/Plugin.DownloadManager.Abstractions.xml",
+        "lib/Xamarin.iOS10/Plugin.DownloadManager.dll",
+        "lib/Xamarin.iOS10/Plugin.DownloadManager.xml",
+        "lib/dotnet/Plugin.DownloadManager.Abstractions.dll",
+        "lib/dotnet/Plugin.DownloadManager.Abstractions.xml",
+        "lib/dotnet/Plugin.DownloadManager.XML",
+        "lib/dotnet/Plugin.DownloadManager.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.Abstractions.dll",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.Abstractions.xml",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.XML",
+        "lib/portable-net45+wp8+wpa81+win8+MonoAndroid10+MonoTouch10+Xamarin.iOS10+UAP10/Plugin.DownloadManager.dll",
+        "lib/uap10.0/Plugin.DownloadManager.Abstractions.dll",
+        "lib/uap10.0/Plugin.DownloadManager.Abstractions.xml",
+        "lib/uap10.0/Plugin.DownloadManager.dll",
+        "lib/uap10.0/Plugin.DownloadManager.xml"
+      ]
+    },
+    "Xamarin.Forms/2.3.5.239-pre3": {
+      "sha512": "nr8U+3nYBdsRFnm5oBKWi6zdEalbd0unmEZFPwTSXtSRumcMSwsMU/UI9cP0wmzwBMJYCjPYmvKZIorVmcjM7Q==",
+      "type": "package",
+      "path": "Xamarin.Forms/2.3.5.239-pre3",
+      "files": [
+        "Xamarin.Forms.2.3.5.239-pre3.nupkg.sha512",
         "Xamarin.Forms.nuspec",
+        "build/netstandard1.0/Mono.Cecil.Mdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Pdb.dll",
+        "build/netstandard1.0/Mono.Cecil.Rocks.dll",
+        "build/netstandard1.0/Mono.Cecil.dll",
+        "build/netstandard1.0/Xamarin.Forms.Build.Tasks.dll",
+        "build/netstandard1.0/Xamarin.Forms.Core.dll",
+        "build/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "build/netstandard1.0/Xamarin.Forms.targets",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Mdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Pdb.dll",
         "build/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Mono.Cecil.Rocks.dll",
@@ -5053,6 +5128,10 @@
         "lib/WP80/Xamarin.Forms.Xaml.dll",
         "lib/WP80/Xamarin.Forms.Xaml.pdb",
         "lib/WP80/Xamarin.Forms.Xaml.xml",
+        "lib/Xamarin.Mac/Xamarin.Forms.Core.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Platform.macOS.dll",
+        "lib/Xamarin.Mac/Xamarin.Forms.Xaml.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Core.Design.dll",
         "lib/Xamarin.iOS10/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/Xamarin.iOS10/Xamarin.Forms.Core.dll",
@@ -5101,6 +5180,19 @@
         "lib/Xamarin.iOS10/zh-HK/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/zh-Hans/Xamarin.Forms.Platform.iOS.resources.dll",
         "lib/Xamarin.iOS10/zh-Hant/Xamarin.Forms.Platform.iOS.resources.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Core.Design.dll",
+        "lib/netstandard1.0/Design/Xamarin.Forms.Xaml.Design.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Core.dll.mdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Core.xml",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.dll.mdb",
+        "lib/netstandard1.0/Xamarin.Forms.Platform.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.dll.mdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.pdb",
+        "lib/netstandard1.0/Xamarin.Forms.Xaml.xml",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Design/Xamarin.Forms.Core.Design.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Design/Xamarin.Forms.Xaml.Design.dll",
         "lib/portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20/Xamarin.Forms.Core.dll",
@@ -5122,6 +5214,7 @@
         "lib/uap10.0/Xamarin.Forms.Platform.UAP.pri",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/AutoSuggestStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsCommandBarStyle.xbf",
+        "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsProgressBarStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/FormsTextBoxStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/MasterDetailControlStyle.xbf",
         "lib/uap10.0/Xamarin.Forms.Platform.UAP/PageControl.xbf",
@@ -5139,6 +5232,7 @@
         "lib/win81/Xamarin.Forms.Core.xml",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet.dll",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet.pri",
+        "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/FormsProgressBarStyle.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/FormsTextBoxStyle.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/Resources.xbf",
         "lib/win81/Xamarin.Forms.Platform.WinRT.Tablet/TabletResources.xbf",
@@ -5157,6 +5251,7 @@
         "lib/wpa81/Xamarin.Forms.Core.xml",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone.dll",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone.pri",
+        "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/FormsProgressBarStyle.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/FormsTextBoxStyle.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/PhoneResources.xbf",
         "lib/wpa81/Xamarin.Forms.Platform.WinRT.Phone/Resources.xbf",
@@ -5178,14 +5273,15 @@
       "BuildIt.General >= 1.0.0.41",
       "BuildIt.States >= 1.0.0.41",
       "Microsoft.NETCore.Portable.Compatibility >= 1.0.1",
-      "MvvmCross >= 4.4.0",
-      "MvvmCross.Binding >= 4.4.0",
-      "MvvmCross.Core >= 4.4.0",
-      "MvvmCross.Forms.Presenter >= 4.0.1",
-      "MvvmCross.Platform >= 4.4.0",
+      "MvvmCross >= 5.0.2",
+      "MvvmCross.Binding >= 5.0.2",
+      "MvvmCross.Core >= 5.0.2",
+      "MvvmCross.Forms >= 5.0.2",
+      "MvvmCross.Platform >= 5.0.2",
       "NETStandard.Library >= 1.6.1",
       "Newtonsoft.Json >= 10.0.2",
-      "Xamarin.Forms >= 2.3.4.247"
+      "Xam.Plugins.DownloadManager >= 1.1.1",
+      "Xamarin.Forms >= 2.3.5.239-pre3"
     ],
     ".NETStandard,Version=v1.3": []
   },

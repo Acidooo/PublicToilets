@@ -5,6 +5,10 @@
     <ContentPage.Content>
         <Grid>
             <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
                 <ListView ItemsSource="{Binding Toilets}" ItemSelected="ListView_OnItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -12,6 +16,10 @@
                         </DataTemplate>
                     </ListView.ItemTemplate>
                 </ListView>
+                <StackLayout Grid.Row="1">
+                    <Button Text="Download" Command="{Binding DownloadCommand}" />
+                    <Button Text="Cancel" Command="{Binding CancelCommand}" />
+                </StackLayout>
             </Grid>
         </Grid>
     </ContentPage.Content>

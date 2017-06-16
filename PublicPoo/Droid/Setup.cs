@@ -3,9 +3,11 @@ using MvvmCross.Core.ViewModels;
 using MvvmCross.Core.Views;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Droid.Views;
-using MvvmCross.Forms.Presenter.Droid;
+using MvvmCross.Forms.Droid.Presenters;
 using MvvmCross.Platform;
 using MvvmCross.Platform.Platform;
+using PublicPoo.Droid.Services;
+using PublicPoo.Services.interfaces;
 using PublicToilet.Services;
 using PublicToilet.Services.interfaces;
 
@@ -40,6 +42,7 @@ namespace PublicPoo.Droid
         {
             base.InitializeIoC();
             Mvx.LazyConstructAndRegisterSingleton<IFeedService, FeedService>();
+            Mvx.LazyConstructAndRegisterSingleton<IDownloadService, AndroidDownloadService>();
         }
     }
 }
